@@ -46,6 +46,7 @@ data/raw/*
 # avoids merge conflicts
 reports/figures/
 reports/tables/
+reports/writeup
 
 # Exception for final summaries
 # keeps executive_summary.md, technical_appendix.md
