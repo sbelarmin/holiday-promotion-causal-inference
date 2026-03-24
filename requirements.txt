@@ -1,0 +1,25 @@
+# Core numerical stack
+numpy
+pandas
+scipy
+
+# Visualization
+matplotlib
+seaborn
+
+# Statistics / econometrics
+statsmodels
+linearmodels
+patsy
+
+# Causal inference (optional but recommended)
+dowhy
+econml
+causalml
+
+# Notebooks & dev tooling
+jupyter
+ipykernel
+black
+isort
+pytest
