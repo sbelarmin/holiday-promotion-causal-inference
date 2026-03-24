@@ -6,7 +6,7 @@ def _sigmoid(x: np.ndarray) -> np.ndarray:
     return 1.0 / (1.0 + np.exp(-x))
 
 
-def generate_project_google_synth(
+def generate_panel_synth(
     n_users: int = 10_000,
     n_pre_days: int = 30,
     n_promo_days: int = 5,
@@ -290,11 +290,11 @@ def quick_sanity_checks(df: pd.DataFrame) -> dict:
 
 
 if __name__ == "__main__":
-    df = generate_project_google_synth(n_users=10_000, n_pre_days=30, n_promo_days=5, seed=42)
+    df = generate_panel_synth(n_users=10_000, n_pre_days=30, n_promo_days=5, seed=42)
     metrics = quick_sanity_checks(df)
     for k, v in metrics.items():
         print(f"{k}: {v}")
 
     # Save output
-    df.to_csv("data/raw/project_google_synth.csv", index=False)
-    print("Saved: project_google_synth.csv")
+    df.to_csv("data/raw/holiday_promotion_panel.csv", index=False)
+    print("Saved: holiday_promotion_panel.csv")
